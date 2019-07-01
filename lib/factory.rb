@@ -7,10 +7,6 @@ class Factory
       return const_set(class_name, new_class(*other_fields, &block))
     end
 
-    if class_name.is_a? String
-      return
-    end
-
     new_class *fields, &block
   end
 
